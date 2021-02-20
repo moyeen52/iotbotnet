@@ -1,7 +1,7 @@
 ### Early IoT Botnet Detection Through Big Data Analytics
 
 #### Team Members:
-1-M A Moyeen - 40190527
+1-M A Moyeen - 40190527 </br>
 2-Mohammad Reza Navazani - 40111411
 
 #### Abstract: 
@@ -22,21 +22,21 @@ The dataset which we are planning to work on is [N-BaIoT dataset](https://www.ka
 We are planning to implement a Classification and a Clustering technique in terms of detecting anomaly on time series Big Data sets. For clustering we are planning to use K-mean algorithm. This will give us a more clear dataset view, through categorizing data in terms of having the same feature. As a classification we intend to use Random Forest algorithm which is combination of many decision trees used for feature ranking to predict which dataset features have more weight and contribute the most in the malicious’ one.
 
 ##### Dataset Attribute Information(This part copied from the dataset description):
-“ The following describes each of the features headers:
-Stream aggregation:
-H: Stats summarizing the recent traffic from this packet's host (IP)
-HH: Stats summarizing the recent traffic going from this packet's host (IP) to the packet's destination host.
-HpHp: Stats summarizing the recent traffic going from this packet's host+port (IP) to the packet's destination host+port. 
-HH_jit: Stats summarizing the jitter of the traffic going from this packet's host (IP) to the packet's destination host.
-Time-frame (The decay factor Lambda used in the damped window):
-How much recent history of the stream is capture in these statistics
-L5, L3, L1, …
-The statistics extracted from the packet stream:
-weight: The weight of the stream (can be viewed as the number of items observed in recent history)
-mean: …
-std: …
-radius: The root squared sum of the two streams' variances
-magnitude: The root squared sum of the two streams' means
-cov: an approximated covariance between two streams
+“ The following describes each of the features headers:</br>
+Stream aggregation:</br>
+H: Stats summarizing the recent traffic from this packet's host (IP)</br>
+HH: Stats summarizing the recent traffic going from this packet's host (IP) to the packet's destination host.</br>
+HpHp: Stats summarizing the recent traffic going from this packet's host+port (IP) to the packet's destination host+port. </br>
+HH_jit: Stats summarizing the jitter of the traffic going from this packet's host (IP) to the packet's destination host.</br>
+Time-frame (The decay factor Lambda used in the damped window):</br>
+How much recent history of the stream is capture in these statistics</br>
+L5, L3, L1, …</br>
+The statistics extracted from the packet stream:</br>
+weight: The weight of the stream (can be viewed as the number of items observed in recent history)</br>
+mean: …</br>
+std: …</br>
+radius: The root squared sum of the two streams' variances</br>
+magnitude: The root squared sum of the two streams' means</br>
+cov: an approximated covariance between two streams</br>
 pcc: an approximated covariance between two streams ”
 
