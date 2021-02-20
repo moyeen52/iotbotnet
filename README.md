@@ -27,7 +27,8 @@ One of the popular unsupervised machine learning algorithms is K-Means clusterin
 ##### Random Forest
 We also planning to implement Random forest as a classification algorithm. We know that Decision tree is a popular method in machine learning tasks when it comes to classification and regression. If we are looking for responding sequential questions as this model behave like “if then else” pattern we will get a result in the end. By the way we need to consider the risk of overfitting in terms of working with decision trees. Here is the reason we use Random Forest to overcome this risk. The way it performs is like combining many decision trees in order to reduce the overfitting risk. After loading the dataset we are planning to set labeled the data as two classes creditable and not creditable. Which is on the record’s attributes. We will identify the dataset attributes as features. As we need to use these features in our machine learning algorithms we will add them to the DataFram as a vector. Then we will add label column and by building our Random Forest Model we intend to train it with our data with spark pipeline. We will use the model to classify the new data. We hope that this model will us recognize the ‘malicious’ anomaly.
 
-As a Data Pre-Processing in initial steps we will clean and organize the dataset. This will delete that kind of data which is incomplete (if this kind of data presents) and therefore we will provide more accurate and reliable results
+##### Data Pre-Processing
+In initial steps we will clean and organize the dataset. This will delete that kind of data which is incomplete (if this kind of data presents) and therefore we will provide more accurate and reliable results
 
 
 ##### Dataset Attribute Information(This part copied from the dataset description):
