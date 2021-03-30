@@ -107,4 +107,31 @@ def remove_class_imbalance(df,stype='undersample'):
             minordf=under_sample(gafgyt_df, gafgyt_count,  \
             benign_df, benign_count, mirai_df,mirai_count)
             return minordf
+    else:
+        major_df = ''
+        if benign_count > mirai_count and benign_count > gafgyt_count:
+            major_df = benign_df
+            major_df = oversample_df(benign_count, mirai_count, major_df, mirai_df)
+            major_df = oversample_df(benign_count, gafgyt_count, major_df, gafgyt_df)
+        elif mirai_count > benign_count and mirai_count > gafgyt_count:
+            major_df = mirai_df
+            major_df = oversample_df(mirai_count, benign_count, major_df, benign_df)
+            major_df = oversample_df(mirai_count, gafgyt_count, major_df, gafgyt_df)
+        elif gafgyt_count > benign_count and mirai_count < gafgyt_count:
+            major_df = gafgyt_df
+            major_df = oversample_df(gafgyt_count, benign_count, major_df, benign_df)
+            major_df = oversample_df(gafgyt_count, mirai_count, major_df, mirai_df)
+        return major_df
+
+def under_sample(major_df,major_df_count,major_df2,major_df_count2,minor_df,minor_df_count):
+    ratio=int(major_df_count/minor_df_count)
+    sampled_maj_df = major_df.sample(False, 1/ratio)
+    #import pdb;pdb.set_trace()
+    ratio=int(major_df_count2/minor_df_count)
+    sampled_maj_df2 = major_df2.sample(False, 1/ratio)
+    #import pdb;pdb.set_trace()
+    combined_df=unionAll(minor_df,  sampled_maj_df,sampled_maj_df2)
+    return combined_df
+def unionAll(*dfs):
+    return reduce(DataFrame.unionAll, dfs)
               
