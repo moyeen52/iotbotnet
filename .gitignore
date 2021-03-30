@@ -21,6 +21,7 @@ sdist/
 var/
 *.csv
 others/
+data/
 wheels/
 pip-wheel-metadata/
 share/python-wheels/
