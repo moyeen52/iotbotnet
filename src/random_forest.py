@@ -57,8 +57,27 @@ class BotNetRFClassification:
     print(('Total Test Time Taken:%s'%time_dif))
     print('Evaluation Phase Started...')
     self.get_evaluation_results(predictions)
-    
 
+  def test_model(self, model, test_data):
+      predictions = model.transform(test_data)
+      return predictions
+
+  def get_evaluation_results(self, predictions):
+      f1 = self.evaluator.evaluate(predictions, {self.evaluator.metricName: "f1"})
+      print(('F1 Score is: %s') % f1)
+      weightedFMeasure = self.evaluator.evaluate(predictions,  {self.evaluator.metricName: "weightedFMeasure"})
+      print(('weighted FMeasure is: %s') % weightedFMeasure)
+      precision = self.evaluator.evaluate(predictions, {self.evaluator.metricName: "weightedPrecision"})
+      print(('Precision is: %s') % precision)
+      recall = self.evaluator.evaluate(predictions, {self.evaluator.metricName: "weightedRecall"})
+      print(('Recall is: %s') % recall)
+      accuracy = self.evaluator.evaluate(predictions, {self.evaluator.metricName: "accuracy"})
+      print(('Accuracy is: %s') % accuracy)
+      result = '\nF1 Score is:' + str(f1) + '\n' + 'weighted FMeasure is:' + \
+               str(weightedFMeasure) + '\n' + 'Precision is:' + str(precision) + \
+               '\nRecall is:' + str(recall) + '\n' + 'Accuracy is:' + str(accuracy)
+      with open('result.txt', 'a+') as fp:
+          fp.write(result)
 
 
 
