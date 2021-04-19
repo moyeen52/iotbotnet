@@ -115,22 +115,41 @@ As a future extension we are planning to propose a concrete architecture to hand
 
 ### References:
 [1]. D. J. Cook, J. C. Augusto, and V. R. Jakkula, “Ambient intelligence: Technologies, applications, and opportunities,” Pervasive and Mobile Computing, vol. 5, no. 4, pp. 277–298, 2009.
+
 [2]. Singh, Sushil Kumar, Shailendra Rathore, and Jong Hyuk Park. "Blockiotintelligence: A blockchain-enabled intelligent IoT architecture with artificial intelligence." Future Generation Computer Systems 110 (2020): 721-743.
+
 [3]. Ni, Jianbing, Xiaodong Lin, and Xuemin Sherman Shen. "Efficient and secure service-oriented authentication supporting network slicing for 5G-enabled IoT." IEEE Journal on Selected Areas in Communications 36.3 (2018): 644-657.
+
 [4]. Hammi, Badis, et al. "A lightweight ECC-based authentication scheme for Internet of Things (IoT)." IEEE Systems Journal(2020).
-[5].  Kovacs, Eduard (14 November 2014). "BASHLITE Malware Uses ShellShock to Hijack Devices Running BusyBox". SecurityWeek.com. Retrieved 21 October 2016.
+
+[5]. Kovacs, Eduard (14 November 2014). "BASHLITE Malware Uses ShellShock to Hijack Devices Running BusyBox". SecurityWeek.com. Retrieved 21 October 2016.
+
 [6]. C. Kolias, G. Kambourakis, A. Stavrou, and J. Voas, “Ddos in the iot: Mirai and other botnets,” Computer, vol. 50, no. 7, pp. 80–84, 2017.
+
 [7]. M. Antonakakis, T. April, M. Bailey, M. Bernhard, E. Bursztein, J. Cochran, Z. Durumeric, J. A. Halderman, L. Invernizzi, M. Kallitsis et al., “Understanding the mirai botnet,” in USENIX Security Symposium, 2017, pp. 1092–1110.
+
 [8]. Meidan, Yair, et al. "N-baiot—network-based detection of iot botnet attacks using deep autoencoders." IEEE Pervasive Computing 17.3 (2018): 12-22.
-[9] C. Zhou & R. Paffenroth, “Anomaly Detection with Robust Deep Autoencoders,” KDD’17, Halifax, NS, Canada, pp. 665–674, 2017.
-[10] Y. Mirsky, T. Doitshman, Y. Elovici, and A. Shabtai, “Kitsune : An Ensemble of Autoencoders for Online Network Intrusion Detection,” pp. 18–21, 2018. 
-[11] T. Luo and S. G. Nagarajan, “Distributed Anomaly Detection using Autoencoder Neural Networks in WSN for IoT,” no. May 2018.
+
+[9]. C. Zhou & R. Paffenroth, “Anomaly Detection with Robust Deep Autoencoders,” KDD’17, Halifax, NS, Canada, pp. 665–674, 2017.
+
+[10]. Y. Mirsky, T. Doitshman, Y. Elovici, and A. Shabtai, “Kitsune : An Ensemble of Autoencoders for Online Network Intrusion Detection,” pp. 18–21, 2018. 
+
+[11]. T. Luo and S. G. Nagarajan, “Distributed Anomaly Detection using Autoencoder Neural Networks in WSN for IoT,” no. May 2018.
+
 [12]. H. Nguyen, Q. Ngo and V. Le, "IoT Botnet Detection Approach Based on PSI graph and DGCNN classifier," 2018 IEEE International Conference on Information Communication and Signal Processing (ICICSP), Singapore, 2018, pp. 118-122, doi: 10.1109/ICICSP.2018.8549713.
+
 [13]. Doshi, Keval, Yasin Yilmaz, and Suleyman Uludag. "Timely detection and mitigation of stealthy DDoS attacks via IoT networks." IEEE Transactions on Dependable and Secure Computing (2021).
-[14]H. H. Pajouh, A. Dehghantanha, R. Khayami and K.-K.-R. Choo, "Intelligent OS X malware threat detection with code inspection", J. Comput. Virol. Hacking Techn., vol. 14, no. 3, pp. 213-223, Aug. 2018.
-[15] .M. S. Alam and S. T. Vuong, "Random forest classification for detecting Android malware",Proc. IEEE Int. Conf. Green Comput. Commun. IEEE Internet Things IEEE Cyber Phys. Social Comput., pp. 663-669, Aug. 2013.
+
+[14]. H. H. Pajouh, A. Dehghantanha, R. Khayami and K.-K.-R. Choo, "Intelligent OS X malware threat detection with code inspection", J. Comput. Virol. Hacking Techn., vol. 14, no. 3, pp. 213-223, Aug. 2018.
+
+[15]. M. S. Alam and S. T. Vuong, "Random forest classification for detecting Android malware",Proc. IEEE Int. Conf. Green Comput. Commun. IEEE Internet Things IEEE Cyber Phys. Social Comput., pp. 663-669, Aug. 2013.
+
 [16]. S. Kudugunta and E. Ferrara, "Deep neural networks for bot detection", Inf. Sci., vol. 467, pp. 312-322, Oct. 2018.
+
 [17]. Alrashdi, Ibrahim, et al. "Ad-iot: Anomaly detection of iot cyberattacks in smart city using machine learning." 2019 IEEE 9th Annual Computing and Communication Workshop and Conference (CCWC). IEEE, 2019.
+
 [18]. Sriram, S., et al. "Network Flow based IoT Botnet Attack Detection using Deep Learning." IEEE INFOCOM 2020-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS). IEEE, 2020.
+
 [19]. Doshi, Rohan, Noah Apthorpe, and Nick Feamster. "Machine learning DDoS detection for consumer internet of things devices." 2018 IEEE Security and Privacy Workshops (SPW). IEEE, 2018.
+
 [20]. Majumdar, Pramathesh, et al. "A Deep Learning Approach Against Botnet Attacks to Reduce the Interference Problem of IoT." Intelligent Computing and Applications. Springer, Singapore, 2021. 645-655.
