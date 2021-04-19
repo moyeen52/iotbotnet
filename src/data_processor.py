@@ -29,17 +29,18 @@ def read_csv(spark,filename):
     
     
     df=spark.read.csv(filename,inferSchema =True,header='true')
+    #import pdb;pdb.set_trace()
     return df
 
-def read_all_and_merge(spark):
+def read_all_and_merge(spark,label_map=False):
     '''
       all data read from data folder
       data format 1.class.x.csv
       This method reads each csv and assigns label column with class
       merges df
     '''
-   
-    label_map={'benign':1,
+    if not label_map:
+       label_map={'benign':1,
                'mirai':2,
                'gafgyt':3}
     whole_df=''

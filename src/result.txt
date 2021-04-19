@@ -8,3 +8,118 @@ weighted FMeasure is:0.9241645388433939
 Precision is:0.9265484262077706
 Recall is:0.9240924092409242
 Accuracy is:0.9240924092409241
+F1 Score is:0.9702386951746151
+weighted FMeasure is:0.9702386951746151
+Precision is:0.9715690409620673
+Recall is:0.9702970297029703
+Accuracy is:0.9702970297029703
+F1 Score is:0.9702386951746151
+weighted FMeasure is:0.9702386951746151
+Precision is:0.9715690409620673
+Recall is:0.9702970297029703
+Accuracy is:0.9702970297029703
+F1 Score is:0.9702386951746151
+weighted FMeasure is:0.9702386951746151
+Precision is:0.9715690409620673
+Recall is:0.9702970297029703
+Accuracy is:0.9702970297029703
+F1 Score is:0.9702386951746151
+weighted FMeasure is:0.9702386951746151
+Precision is:0.9715690409620673
+Recall is:0.9702970297029703
+Accuracy is:0.9702970297029703
+F1 Score is:0.9702386951746151
+weighted FMeasure is:0.9702386951746151
+Precision is:0.9715690409620673
+Recall is:0.9702970297029703
+Accuracy is:0.9702970297029703
+F1 Score is:0.9702386951746151
+weighted FMeasure is:0.9702386951746151
+Precision is:0.9715690409620673
+Recall is:0.9702970297029703
+Accuracy is:0.9702970297029703
+
+Total Training Time Taken:326.8117983341217                                     
+Test Started...
+Total Test Time Taken:0.2602400779724121
+Evaluation Phase Started...
+21/04/17 23:11:37 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:14:03 WARN DAGScheduler: Broadcasting large task binary with size 1927.1 KiB
+21/04/17 23:14:19 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:16:44 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:17:05 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:19:28 WARN DAGScheduler: Broadcasting large task binary with size 1913.2 KiB
+21/04/17 23:19:32 WARN DAGScheduler: Broadcasting large task binary with size 1913.8 KiB
+21/04/17 23:19:32 WARN DAGScheduler: Broadcasting large task binary with size 1914.4 KiB
+21/04/17 23:19:32 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:19:32 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:19:33 WARN DAGScheduler: Broadcasting large task binary with size 1915.1 KiB
+21/04/17 23:19:33 WARN DAGScheduler: Broadcasting large task binary with size 1915.0 KiB
+21/04/17 23:19:33 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:19:33 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:19:46 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:22:12 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+Total Training Time Taken:647.3159379959106                                     
+Test Started...
+Total Test Time Taken:0.254758358001709
+Evaluation Phase Started...
+21/04/17 23:22:24 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:24:44 WARN DAGScheduler: Broadcasting large task binary with size 1928.1 KiB
+21/04/17 23:24:59 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:27:24 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:27:45 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:30:03 WARN DAGScheduler: Broadcasting large task binary with size 1913.2 KiB
+21/04/17 23:30:06 WARN DAGScheduler: Broadcasting large task binary with size 1913.8 KiB
+21/04/17 23:30:06 WARN DAGScheduler: Broadcasting large task binary with size 1914.4 KiB
+21/04/17 23:30:07 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:30:07 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:30:07 WARN DAGScheduler: Broadcasting large task binary with size 1915.1 KiB
+21/04/17 23:30:07 WARN DAGScheduler: Broadcasting large task binary with size 1915.0 KiB
+21/04/17 23:30:08 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:30:08 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:30:20 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:32:50 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+Total Training Time Taken:637.7925391197205                                     
+Test Started...
+Total Test Time Taken:0.2949252128601074
+Evaluation Phase Started...
+21/04/17 23:33:04 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:35:39 WARN DAGScheduler: Broadcasting large task binary with size 1929.0 KiB
+21/04/17 23:35:55 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:38:25 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:38:48 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:41:12 WARN DAGScheduler: Broadcasting large task binary with size 1913.2 KiB
+21/04/17 23:41:15 WARN DAGScheduler: Broadcasting large task binary with size 1913.8 KiB
+21/04/17 23:41:15 WARN DAGScheduler: Broadcasting large task binary with size 1914.4 KiB
+21/04/17 23:41:15 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:41:15 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:41:16 WARN DAGScheduler: Broadcasting large task binary with size 1915.1 KiB
+21/04/17 23:41:16 WARN DAGScheduler: Broadcasting large task binary with size 1915.0 KiB
+21/04/17 23:41:16 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:41:16 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:41:29 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:44:10 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+Total Training Time Taken:681.7896659374237                                     
+Test Started...
+Total Test Time Taken:0.3438115119934082
+Evaluation Phase Started...
+21/04/17 23:44:28 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:47:01 WARN DAGScheduler: Broadcasting large task binary with size 1929.9 KiB
+21/04/17 23:47:18 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:49:59 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:50:23 WARN DAGScheduler: Broadcasting large task binary with size 1910.4 KiB
+21/04/17 23:52:56 WARN DAGScheduler: Broadcasting large task binary with size 1913.2 KiB
+21/04/17 23:53:00 WARN DAGScheduler: Broadcasting large task binary with size 1913.8 KiB
+21/04/17 23:53:00 WARN DAGScheduler: Broadcasting large task binary with size 1914.4 KiB
+21/04/17 23:53:01 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:53:01 WARN DAGScheduler: Broadcasting large task binary with size 1914.8 KiB
+21/04/17 23:53:01 WARN DAGScheduler: Broadcasting large task binary with size 1915.1 KiB
+21/04/17 23:53:02 WARN DAGScheduler: Broadcasting large task binary with size 1915.0 KiB
+21/04/17 23:53:02 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:53:02 WARN DAGScheduler: Broadcasting large task binary with size 1914.2 KiB
+21/04/17 23:53:17 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+21/04/17 23:56:07 WARN DAGScheduler: Broadcasting large task binary with size 2.1 MiB
+Total Training Time Taken:715.8842458724976                                     
+Test Started...
+Total Test Time Taken:0.25293707847595215
+Evaluation Phase Started...
