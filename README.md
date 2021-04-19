@@ -40,14 +40,20 @@ In this project, we used the famous IoT botnet attack dataset called “N-BaIoT�
 Besides the aforementioned attributes, the dataset also contains the weight, mean, standard deviation, radius, magnitude, covariance between streams of packets. 
 
 The dataset is an important contribution in case of IoT botnet attack analysis. However, it is imbalanced which is shown in the following figure.
+
 ![picture alt](https://github.com/moyeen52/iotbotnet/blob/main/figures/class_distribution.png "Imbalance in Dataset")
+
 From the figure it is evident that the benign class of traffic are nearly 8 percent of the total dataset whereas the Mirai samples are nearly 50 percent of the total dataset and BAHLITE data samples are nearly 40 percent.
 
 #### 2.2 Data Pre-Processing
 The dataset obtained from the kaggle basically contains lots of csv file naming with different attack and non attack types and the header column of each csv file preserves the features name.  Also, some of the features' names contain unsupported dot (.) characters. Moreover, the dataset does not have a class label assigned to each row by default. Furthermore, the imbalance in the chosen dataset can cause inaccurate results. Therefore, we had to preprocess our data such that the data becomes labeled, column name contains no unsupported characters and dataset becomes balanced. The following figure represents the data preprocessing stages. 
+
 ![picture alt](https://github.com/moyeen52/iotbotnet/blob/main/figures/arch.png "Data Processing Stages")
+
 In order to label our data we read each individual csv file, and based on the name we labeled those csv data to a particular class such as Benign, Mirai or BASHLITE. While labeling each data we merged each individual CSV file contents so that the final data file contains the whole data. After that, we removed the class imbalance in the dataset with major class undersampling. We also tried minor class oversampling. However, while doing the minor class oversampling the training time was too long and could not finish the training in a single day. Therefore, we focused on the major class undersampling technique to remove class imbalance.  After doing the major class undersampling as shown in the following figure,  we have got nearly 32% Benign and BASHLITE and 35% of Mirai data samples. 
+
 ![picture alt](https://github.com/moyeen52/iotbotnet/blob/main/figures/removed_imbalance.png "Dataset imbalance remvoed")
+
 Which is balanced and can enable accurate data classification. 
 
 After removal of class imbalance, we did a random shuffle on our data so that the dataset samples became representative to all the three classes. At this stage, our column name still contains unsupported characters, which we need to remove. Therefore, we removed those unsupported characters such as dot (.) from the column names. Now, to train and test our model with a new set of data we did 70% and 30% training and test split randomly. The 70% train data is used to fit the machine learning model and allows the model to learn about the data. The other 30% data evaluates the performance of the model because these 30% data was unseen to the model at training stage.  In order to run the classifiers, we need to merge the features into a single feature vector. Therefore, we used pyspark VectorAssembler to merge the dataset features into a single column. 
@@ -78,12 +84,16 @@ Though Decision Tree results are also balanced in all cases, we cannot be certai
 For the Factorization Machines, we experienced very high precision and that indicates that we might have low false positives. However, our recall value is very low and therefore the classifier is not complete and probably we have lots of false negatives. The low recall value affects the F1 score and therefore it is just 0.61. Also, the classifier accuracy is very bad and is only 44%. This kind of problem could be due to the wrong estimation of step size parameters. 
 
 The following figure indicates the F1 score comparison between RF, DT, and FM.
+
 ![picture alt](https://github.com/moyeen52/iotbotnet/blob/main/figures/comparsion_model.png "Model Comparisons")
+
 From the figure it is noticeable that the DT has nearly f1 score of 1 may be due to the overfitting problem. Whereas, FM has almost half f1 score compared to DT due to wrong estimation of step size. The RF shows more authentic results due to estimation with multiple trees and having 3-fold cross validation with max depth set. 
 
 #### 3.2 K-means Clustering Results: 
 While observing labeled classification, we wanted to observe the performance of unsupervised algorithms so that we can be sure that attack traffics are correctly identified even if there is no data label. Therefore, we evaluated the k-means algorithm and observed the silhouette score by varying the number of clusters. Our data mainly had 7 different classes, which we have reduced to 3 classes for our analysis purpose. Because, we wanted to observe whether the attack is Mirai or BASHLITE instead of getting more specific TCP SYN attack of Mirai or BASHLITE. 
+
 ![picture alt](https://github.com/moyeen52/iotbotnet/blob/main/figures/sihouette.jpg "sihouette score for different k")
+
 The above plot of silhouette score clearly indicates that the silhouette score is higher from 3 to 7 and then just starts falling down. Which indicates that k-means can clearly separate the attack traffic and non-attack traffic. 
 
 ### 4. Discussion
@@ -101,3 +111,26 @@ There are certain limitations of our work. Which we are going to highlight here.
  * For the FM classifier, we did not accurately determine the step size. 
 ##### Future works:
 As a future extension we are planning to propose a concrete architecture to handle live attack traffic and we are interested to observe how the decisions from ML algorithms affect the performance of live network traffic. We are planning to do feature reductions in future and train more classifiers and deep neural networks to compare their performance. Moreover, as a future extension of this work we want to implement a model selection algorithm and integrate transfer learning features.
+
+
+### References:
+[1]. D. J. Cook, J. C. Augusto, and V. R. Jakkula, “Ambient intelligence: Technologies, applications, and opportunities,” Pervasive and Mobile Computing, vol. 5, no. 4, pp. 277–298, 2009.
+[2]. Singh, Sushil Kumar, Shailendra Rathore, and Jong Hyuk Park. "Blockiotintelligence: A blockchain-enabled intelligent IoT architecture with artificial intelligence." Future Generation Computer Systems 110 (2020): 721-743.
+[3]. Ni, Jianbing, Xiaodong Lin, and Xuemin Sherman Shen. "Efficient and secure service-oriented authentication supporting network slicing for 5G-enabled IoT." IEEE Journal on Selected Areas in Communications 36.3 (2018): 644-657.
+[4]. Hammi, Badis, et al. "A lightweight ECC-based authentication scheme for Internet of Things (IoT)." IEEE Systems Journal(2020).
+[5].  Kovacs, Eduard (14 November 2014). "BASHLITE Malware Uses ShellShock to Hijack Devices Running BusyBox". SecurityWeek.com. Retrieved 21 October 2016.
+[6]. C. Kolias, G. Kambourakis, A. Stavrou, and J. Voas, “Ddos in the iot: Mirai and other botnets,” Computer, vol. 50, no. 7, pp. 80–84, 2017.
+[7]. M. Antonakakis, T. April, M. Bailey, M. Bernhard, E. Bursztein, J. Cochran, Z. Durumeric, J. A. Halderman, L. Invernizzi, M. Kallitsis et al., “Understanding the mirai botnet,” in USENIX Security Symposium, 2017, pp. 1092–1110.
+[8]. Meidan, Yair, et al. "N-baiot—network-based detection of iot botnet attacks using deep autoencoders." IEEE Pervasive Computing 17.3 (2018): 12-22.
+[9] C. Zhou & R. Paffenroth, “Anomaly Detection with Robust Deep Autoencoders,” KDD’17, Halifax, NS, Canada, pp. 665–674, 2017.
+[10] Y. Mirsky, T. Doitshman, Y. Elovici, and A. Shabtai, “Kitsune : An Ensemble of Autoencoders for Online Network Intrusion Detection,” pp. 18–21, 2018. 
+[11] T. Luo and S. G. Nagarajan, “Distributed Anomaly Detection using Autoencoder Neural Networks in WSN for IoT,” no. May 2018.
+[12]. H. Nguyen, Q. Ngo and V. Le, "IoT Botnet Detection Approach Based on PSI graph and DGCNN classifier," 2018 IEEE International Conference on Information Communication and Signal Processing (ICICSP), Singapore, 2018, pp. 118-122, doi: 10.1109/ICICSP.2018.8549713.
+[13]. Doshi, Keval, Yasin Yilmaz, and Suleyman Uludag. "Timely detection and mitigation of stealthy DDoS attacks via IoT networks." IEEE Transactions on Dependable and Secure Computing (2021).
+[14]H. H. Pajouh, A. Dehghantanha, R. Khayami and K.-K.-R. Choo, "Intelligent OS X malware threat detection with code inspection", J. Comput. Virol. Hacking Techn., vol. 14, no. 3, pp. 213-223, Aug. 2018.
+[15] .M. S. Alam and S. T. Vuong, "Random forest classification for detecting Android malware",Proc. IEEE Int. Conf. Green Comput. Commun. IEEE Internet Things IEEE Cyber Phys. Social Comput., pp. 663-669, Aug. 2013.
+[16]. S. Kudugunta and E. Ferrara, "Deep neural networks for bot detection", Inf. Sci., vol. 467, pp. 312-322, Oct. 2018.
+[17]. Alrashdi, Ibrahim, et al. "Ad-iot: Anomaly detection of iot cyberattacks in smart city using machine learning." 2019 IEEE 9th Annual Computing and Communication Workshop and Conference (CCWC). IEEE, 2019.
+[18]. Sriram, S., et al. "Network Flow based IoT Botnet Attack Detection using Deep Learning." IEEE INFOCOM 2020-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS). IEEE, 2020.
+[19]. Doshi, Rohan, Noah Apthorpe, and Nick Feamster. "Machine learning DDoS detection for consumer internet of things devices." 2018 IEEE Security and Privacy Workshops (SPW). IEEE, 2018.
+[20]. Majumdar, Pramathesh, et al. "A Deep Learning Approach Against Botnet Attacks to Reduce the Interference Problem of IoT." Intelligent Computing and Applications. Springer, Singapore, 2021. 645-655.
